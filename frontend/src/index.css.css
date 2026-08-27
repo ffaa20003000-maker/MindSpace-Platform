@@ -1,0 +1,41 @@
+
+@font-face {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/Tajawal-Regular.woff2') format('woff2'),
+       url('./assets/fonts/Tajawal-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/Tajawal-Bold.woff2') format('woff2'),
+       url('./assets/fonts/Tajawal-Bold.woff') format('woff');
+}
+/* ... كرر لبقية الأوزان (300, 500, 800) إذا وجدت */
+body {
+  font-family: 'Tajawal', sans-serif;
+  /* باقي الإعدادات */
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  background-color: #f8fafc;
+  direction: rtl;
+}
+
+/* أنيميشن إضافية للأيقونات */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.animate-float {
+  animation: float 2s ease-in-out infinite;
+}
